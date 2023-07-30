@@ -1,0 +1,168 @@
+* {
+	margin: 0;
+	font-family: 'Hanken Grotesk', sans-serif;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.main-container {
+	display: flex;
+	width: 500px;
+	height: 350px;
+
+	border-radius: 15px;
+	box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1), 0px 4px 10px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+}
+
+.container-1 {
+	background-color: blue;
+	flex: 1;
+	border-radius: 15px;
+	display: flex;
+	/* justify-content: center; */
+	align-items: center;
+	flex-direction: column;
+}
+
+.container-2 {
+	background-color: white;
+	flex: 1;
+	padding: 20px 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.result {
+	padding: 40px 0 20px 0;
+}
+
+.result p {
+	color: white;
+}
+
+.score-percentage {
+	background-color: rgba(0, 0, 0, 0.3);
+	height: 130px;
+	width: 130px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.score {
+	color: white;
+}
+
+.bold {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.small {
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.title {
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	margin: 15px 0;
+	letter-spacing: 1px;
+}
+
+.sub-title {
+	color: rgba(255, 255, 255, 0.5);
+	text-align: center;
+	font-size: 13px;
+	max-width: 80%;
+	margin: auto;
+}
+
+.list-item {
+	/* flex: 1; */
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.item {
+	padding: 10px 10px;
+	width: 100%;
+	border-radius: 9px;
+	margin: 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.item-1 {
+	background-color: rgb(255, 246, 247);
+	color: rgb(233, 180, 181);
+}
+
+.item-2 {
+	background-color: rgb(255, 251, 242);
+	color: rgb(233, 198, 130);
+}
+
+.item-3 {
+	background-color: rgb(242, 251, 250);
+	color: rgb(138, 219, 201);
+}
+
+.item-4 {
+	background-color: rgb(243, 243, 253);
+	color: rgb(111, 117, 212);
+}
+
+img {
+	width: 14px;
+}
+
+span {
+	font-size: 14px;
+}
+
+.percentage {
+	display: flex;
+	color: black;
+	font-size: 14px;
+}
+
+.score-board {
+	font-weight: bold;
+	margin-right: 5px;
+}
+
+.btn {
+	background-color: rgb(48, 59, 89);
+	color: white;
+	width: 100%;
+	border-radius: 30px;
+	padding: 12px;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+@media (max-width: 768px) {
+	.main-container {
+		flex-direction: column;
+		/* min-height: 100vh; */
+		width: 90%;
+		height: 90vh;
+	}
+
+	.container {
+		min-height: 100vh;
+		/* overflow-y: scroll; */
+	}
+}
